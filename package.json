@@ -4,9 +4,11 @@
   "devDependencies": {
     "@tiphedor/eslint-config-base": "^0.0.4",
     "eslint": "^8.3.0",
+    "husky": "^7.0.4",
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky install"
   }
 }
