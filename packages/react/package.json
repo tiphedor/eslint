@@ -1,0 +1,10 @@
+{
+  "name": "@tiphedor/eslint-config-react",
+  "version": "1.0.0",
+  "description": "React eslint config",
+  "main": "index.js",
+  "repository": "https://github.com/tiphedor/eslint",
+  "author": "Martin \"tiphedor\" STEFFEN",
+  "license": "MIT",
+  "private": false
+}
