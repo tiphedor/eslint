@@ -1,6 +1,6 @@
 {
   "name": "@tiphedor/eslint-config-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Base eslint config",
   "main": "index.js",
   "repository": "https://github.com/tiphedor/eslint",
