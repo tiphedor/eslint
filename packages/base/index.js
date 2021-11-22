@@ -11,6 +11,6 @@ module.exports = {
 		'array-bracket-spacing': [ 'error', 'always' ],
 		'object-curly-spacing': [ 'error', 'always' ],
 		'key-spacing': [ 'error', { beforeColon: false } ],
-		'comma-spacing': [ 'error', { before: false, after: true } ],
+		'comma-spacing': [ 'error', { before: false, after: true }     ],
 	}
 };
