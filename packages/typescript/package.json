@@ -1,0 +1,10 @@
+{
+  "name": "@tiphedor/eslint-config-typescript",
+  "version": "0.0.4",
+  "description": "Typescript config",
+  "main": "index.js",
+  "repository": "https://github.com/tiphedor/eslint",
+  "author": "Martin \"tiphedor\" STEFFEN",
+  "license": "MIT",
+  "private": false
+}

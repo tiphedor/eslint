@@ -1,6 +1,10 @@
 module.exports = {
 	extends: [
 		'eslint:recommended',
+		'airbnb-base',
+	],
+	plugins: [
+
 	],
 	rules: {
 		indent: [ 'error', 'tab' ],
@@ -11,12 +15,8 @@ module.exports = {
 		'array-bracket-spacing': [ 'error', 'always' ],
 		'object-curly-spacing': [ 'error', 'always' ],
 		'key-spacing': [ 'error', { beforeColon: false } ],
-		'comma-spacing': [ 'error', { before: false, after: true } ],
-		'no-multi-spaces': [ 'error' ],
-		'no-multiple-empty-lines': [ 'error' ],
 		'no-constructor-return': [ 'error' ],
 		'no-duplicate-imports': [ 'error' ],
-		'no-promise-executor-return': [ 'error' ],
 		'no-self-compare': [ 'error' ],
 		'no-use-before-define': [ 'error' ],
 		'no-var': [ 'error' ],
@@ -44,37 +44,42 @@ module.exports = {
 		'no-useless-concat': [ 'error' ],
 		'no-useless-return': [ 'error' ],
 		'no-void': [ 'error' ],
-		'prefer-destructuring': [ 'error' ],
 		'prefer-exponentiation-operator': [ 'error' ],
 		'prefer-template': [ 'error' ],
 		radix: [ 'error' ],
 		'require-await': [ 'error' ],
 		yoda: [ 'error', 'never' ],
 		eqeqeq: [ 'error', 'always' ],
-		'spaced-comment': [ 'error',
-			'always',
+		'max-len': [
+			'error',
+			120,
+			2,
 			{
-				exceptions: [ '-',
-					'+',
-					'#',
-					'=' ]
-			} ],
-		'no-trailing-spaces': [ 'error' ],
-		'object-curly-newline': [ 'error', {
-			ObjectExpression: { multiline: true, minProperties: 3 },
-			ObjectPattern: { multiline: true, minProperties: 3 },
-			ImportDeclaration: { multiline: true, minProperties: 3 },
-			ExportDeclaration: { multiline: true, minProperties: 3 },
-		} ],
-		'array-element-newline': [ 'error', {
-			ArrayExpression: { minItems: 3 },
-			ArrayPattern: { minItems: 3 },
-		} ],
-		'object-property-newline': [ 'error', { allowAllPropertiesOnSameLine: true } ],
-		'rest-spread-spacing': [ 'error' ],
-		'space-before-function-paren': [ 'error', 'never' ],
-		'space-in-parens': [ 'error', 'never' ],
-		'space-infix-ops': [ 'error', { int32Hint: true } ],
-		'template-curly-spacing': [ 'error', 'never' ]
-	}
+				ignoreUrls: true,
+				ignoreComments: false,
+				ignoreRegExpLiterals: true,
+				ignoreStrings: true,
+				ignoreTemplateLiterals: true,
+			},
+		],
+		'prefer-destructuring': [
+			'error',
+			{
+				VariableDeclarator: {
+					array: false,
+					object: true,
+				},
+				AssignmentExpression: {
+					array: false,
+					object: false,
+				},
+			},
+			{ enforceForRenamedProperties: false },
+		],
+		'no-tabs': 'off',
+		'import/extensions': [ 'error', 'never' ],
+		'import/no-cycle': 'off',
+		'import/prefer-default-export': 'off',
+
+	},
 };

@@ -6,5 +6,9 @@
   "repository": "https://github.com/tiphedor/eslint",
   "author": "Martin \"tiphedor\" STEFFEN",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
+  }
 }
