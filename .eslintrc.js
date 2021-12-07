@@ -5,11 +5,8 @@ module.exports = {
 		node: true,
 	},
 	extends: [
-		'eslint:recommended',
 		'@tiphedor/eslint-config-base'
 	],
-	parserOptions: {
-		ecmaVersion: 12,
-	},
+	parserOptions: { ecmaVersion: 12, },
 	rules: {}
 };
